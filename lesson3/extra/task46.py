@@ -1,11 +1,10 @@
-# Python Program to get the first digit of number
-
-# take input
-num = int(input('Enter any Number: '))
-
-# get the first digit
-while (num >= 10):
-    num = num // 10
-
-# printing first digit of number
-print('The first digit of number:', num)
+plaintext = int(input())
+digit1 = plaintext // 10 ** 2 % 10
+digit2 = plaintext // 10 ** 1 % 10
+digit3 = plaintext // 10 ** 0 % 10
+part1 = digit1 + digit2
+part2 = digit2 + digit3
+if part2 > part1:
+    print(str(part2) + str(part1))
+elif part1 > part2:
+    print(str(part1) + str(part2))
