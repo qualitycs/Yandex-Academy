@@ -1,9 +1,6 @@
-num = int(input())
-digit1 = num // 10 ** 2 % 10
-digit2 = num // 10 ** 1 % 10
-digit3 = num // 10 ** 0 % 10
-half = (digit1 + digit3) / 2
-if half == digit2:
+num = input()
+digits = sorted([int(num[0]), int(num[1]), int(num[2])])
+if (digits[0] + digits[2]) / 2 == digits[1]:
     print('Вы ввели красивое число')
 else:
     print('Жаль, вы ввели обычное число')
