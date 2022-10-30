@@ -1,7 +1,5 @@
-num = int(input())
-digit1 = num // 10 ** 3 % 10
-digit2 = num // 10 ** 2 % 10
-digit3 = num // 10 ** 1 % 10
-digit4 = num // 10 ** 0 % 10
-digits = [digit1, digit2, digit3, digit4]
-print(sorted(digits))
+num = input()
+
+nzeros = num.count('0')
+num = ''.join(sorted(num.replace('0', '')))
+print(num[0] + ('0' * nzeros) + num[1:])

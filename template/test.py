@@ -1,1 +1,3 @@
-print(167 // 10)
+words = ["How","are","you","doing","?"]
+sentence = ''.join(words)
+print(sentence)
