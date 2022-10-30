@@ -6,5 +6,5 @@ part1 = digit1 + digit2
 part2 = digit2 + digit3
 if part2 > part1:
     print(str(part2) + str(part1))
-if part1 > part2:
+if part1 >= part2:
     print(str(part1) + str(part2))
