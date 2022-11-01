@@ -1,6 +1,6 @@
 print('You are in a room with 3 doorways in it')
 print('Input 1 in order to enter the red doorway or input 2 in order to enter the green doorway or input 3 in order to'
-      'to enter the blue doorway.')
+      ' enter the blue doorway.')
 door = input('What is your choice? ')
 if door == '1':
     print('You have entered a small room filled with snakes!')
