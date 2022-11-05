@@ -1,5 +1,8 @@
-total = int(input())
-while total != 0:
-    take = int(input())
-    total = total - take
-    print(total)
+num = int(input())
+n1 = 0
+n2 = 1
+while num >= n1 + n2:
+    n1 = n1 + n2
+    print(n1)
+    n2 = n1 + n2
+    print(n2)
