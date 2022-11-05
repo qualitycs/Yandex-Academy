@@ -1,16 +1,18 @@
+# восток = east = (x +=)
+# запад = west = (x -=)
+# север = north = (y +=)
+# юг = south = (y -=)
+destination_x = input()
+destination_y = input()
+directions = ['y +=', 'x -=', 'y -=', 'x +=']
 x, y = 0, 0
-destination_x = int(input())
-destination_y = int(input())
-looking = 1, 0
-print(looking)
-while destination_x != x and destination_y != y:
-    direction1 = input()
-    axis = y
-    if direction1 == 'вперёд':
-        steps = int(input())
-        x += steps
-    else:
-        direction2 = input()
-        steps = int(input())
-        if direction2 == 'налево':
-            print()
+while destination_y != y and destination_x != x:
+    command = input()
+    if command != 'вперёд':
+        if command == 'налево':
+            directions.append(directions.pop(0))
+        if command == 'направо':
+            directions.insert(0, directions.pop)
+        if command == 'разворот':
+            directions.insert(1, directions.pop)
+
