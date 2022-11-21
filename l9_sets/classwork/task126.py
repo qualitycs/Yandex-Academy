@@ -1,18 +1,17 @@
-half = False
 half1 = set()
 half2 = set()
-while half is False:
+stop = False
+
+houseNum = input()
+while houseNum != '':
     houseNum = input()
-    if houseNum == '':
-        half = True
-    else:
-        half1.add(houseNum)
-while half is True:
+    half1.add(houseNum)
+stop = True
+houseNum = input()
+while stop is True and houseNum != '':
     houseNum = input()
-    if houseNum == '':
-        break
-    else:
-        half2.add(houseNum)
+    half2.add(houseNum)
+
 same = half1.intersection(half2)
 if same:
     print(*same, sep='\n')
