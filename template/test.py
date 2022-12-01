@@ -1,2 +1,3 @@
-for i in 5001:
-    print(i)
+n = int(input())
+cock = 20
+print(n / 41)
