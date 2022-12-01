@@ -1,5 +1,5 @@
-symbol = input()
-word = input()
-for i in (1, 2):
-    word = word + symbol + input()
-print(word)
+sym = input()
+a = input()
+b = input()
+c = input()
+print(a, sym, b, sym, c, sep='')

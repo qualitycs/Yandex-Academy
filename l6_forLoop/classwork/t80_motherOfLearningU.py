@@ -1,3 +1,4 @@
 phrase = input()
-for i in (1, int(input())):
+n = int(input())
+for i in range(n):
     print(phrase)
