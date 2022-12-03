@@ -1,16 +1,14 @@
+catFound = False
 count = 0
-finalCount = 0
-locked = False
-while True:
-    string = input()
+phrase = ''
+while phrase != 'СТОП':
+    phrase = input()
     count += 1
-    if string == 'СТОП':
-        break
-    if 'Кот' in string or 'кот' in string:
-        if locked is False:
-            finalCount = count
-            locked = True
-if count > 0:
-    print(count)
+    if not catFound:
+        if 'Кот' in phrase or 'кот' in phrase:
+            catFound = True
+            number = count
+if catFound:
+    print(number)
 else:
-    print('-1')
+    print(-1)
