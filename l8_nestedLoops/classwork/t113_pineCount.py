@@ -1,5 +1,10 @@
-n = 1
-k = int(input())
-while k > n:
-    print(n)
-    n += 1
+n = int(input())
+q, s, k = 1, 1, 0
+while q <= n:
+    print(q, end=' ')
+    q += 1
+    k += 1
+    if k == s:
+        print()
+        s += 1
+        k = 0
