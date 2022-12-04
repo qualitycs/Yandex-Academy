@@ -1,7 +1,8 @@
-k = int(input())
-for j in range(1, 10):
-    if j == k:
-        continue
-    for i in range(1, 10):
-        print(i, '*', j, '=', j * i, sep='', end='\t')
-    print()
+nums = []
+n = int(input())
+for i in range(n):
+    number = int(input())
+    list.append(nums, number)
+for i in range(n):
+    if nums[i + 1]
+    print(nums[i] + nums[i + 1])
