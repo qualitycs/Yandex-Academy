@@ -1,1 +1,3 @@
-exec('import math \nprint(*[math.factorial(int(input())) for i in range(1)])')
+text = 'Hello, world!'
+print(text[:5])
+print(text[7:])
