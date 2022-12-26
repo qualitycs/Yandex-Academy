@@ -1,19 +1,19 @@
-numbers = []
-goodSum = 0
-goodsSums = []
-goodNum = True
+houseSum = 0
+unique = True
+allHouses = []
 n = int(input())
 for i in range(n):
-    nums = input().split(' - ')
-    numbers.append(nums)
+    houses = input().split(' - ')
+    allHouses.append(houses)
 num = input()
-for nums in numbers:
-    for k in nums:
-        if goodNum is True:
-            goodSum += int(k)
-        for j in nums:
-            if j in num:
-                goodNum = False
-        goodNum = True
-    goodsSums.append(goodSum)
-print(goodsSums)
+for houses in allHouses:
+    for house in houses:
+        unique = True
+        for k in num:
+            if k in house:
+                unique = False
+        if unique is True:
+            houseSum += int(house)
+    print(houseSum)
+    houseSum = 0
+# This task actually activated my autism
