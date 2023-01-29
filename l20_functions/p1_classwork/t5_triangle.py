@@ -3,6 +3,3 @@ def triangle(a, b, c):
         print('Это треугольник')
     else:
         print('Это не треугольник')
-
-
-triangle(20, 13, 17)
