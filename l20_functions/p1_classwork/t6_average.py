@@ -1,2 +1,5 @@
 def print_average(arr):
-    print(sum(arr) / len(arr))
+    if len(arr) == 0:
+        print(0)
+    else:
+        print(sum(arr) / len(arr))

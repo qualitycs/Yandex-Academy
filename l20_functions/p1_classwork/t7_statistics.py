@@ -12,6 +12,3 @@ def print_statistics(arr):
         print(min(arr))
         print(max(arr))
         print(statistics.median(arr))
-
-
-print_statistics([22])
