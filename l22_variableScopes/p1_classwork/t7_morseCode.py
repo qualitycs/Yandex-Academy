@@ -21,3 +21,12 @@ def decode_from_morse(code):
                 result += letter
                 break
     return result
+
+
+def main():
+    choice = input('Do you want to encode or decode the morse code? Write 1 to encode, write 2 to decode:')
+    text = input('Input the text you want to decode/encode:')
+    if choice == '1':
+        print(encode_to_morse(text))
+    if choice == '2':
+        print(decode_from_morse(text))
