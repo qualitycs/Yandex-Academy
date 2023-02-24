@@ -17,3 +17,6 @@ def number_to_words(n):
         return o.get(n)
     else:
         return o.get(n2) + ' ' + f.get(n1)
+
+
+print(number_to_words(12))

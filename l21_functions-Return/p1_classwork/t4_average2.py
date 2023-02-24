@@ -4,3 +4,6 @@ def average(values):
         return 0
     else:
         return statistics.mean(values)
+
+
+print(average([1, 2, 3, 4, 5]))
