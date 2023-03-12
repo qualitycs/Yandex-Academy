@@ -1,0 +1,5 @@
+numbers = range(10, 100)
+filtered_numbers = filter(lambda x: x % 9 == 0, numbers)
+squared_numbers = map(lambda x: x ** 2, filtered_numbers)
+result = sum(squared_numbers)
+print(result)
